@@ -13,7 +13,7 @@ const AuthLayout: React.FC = () => {
     return (
         <Layout>
             <h3>SAP</h3>
-            <span>Авторизация</span>
+            <Text>Авторизация</Text>
             <br />
             <br />
             <div>
