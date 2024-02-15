@@ -1,12 +1,10 @@
-const LanguageField = () => { 
-    const options = [
-        { value: 'RU', label: 'RU' },
-        { value: 'EN', label: 'EN' }
-    ];
-      
+import languagesData from '../../data/languages';
+
+const LanguageField = () => {
+    
     return <select>
         {
-            options.map(opt => <option value={opt.value}>{opt.label}</option>)
+            languagesData.map(lang => <option value={lang.value}>{lang.label}</option>)
         }
     </select>
 };
