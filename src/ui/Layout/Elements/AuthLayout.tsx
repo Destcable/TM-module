@@ -1,7 +1,10 @@
+import React from "react";
 import Layout from "../Layout"
 import NumberField from "../../Input/NumberField"
+import TextField from "../../Input/TextField";
+import PasswordField from "../../Input/PasswordField";
 
-const AuthLayout = () => {
+const AuthLayout: React.FC = () => {
     return (
         <Layout>
             <h3>SAP</h3>
@@ -15,9 +18,11 @@ const AuthLayout = () => {
 
             <div>
                 <span>Пользователь</span>
+                <TextField maxLength={30} />
             </div>
             <div>
                 <span>Пароль</span>
+                <PasswordField maxLength={50}/>
             </div>
             <hr />
         </Layout>
