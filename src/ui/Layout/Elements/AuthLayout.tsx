@@ -3,9 +3,11 @@ import Layout from "../Layout"
 import NumberField from "../../Input/NumberField"
 import TextField from "../../Input/TextField";
 import PasswordField from "../../Input/PasswordField";
+import LanguageStorage from "../../../services/Storage/Language/LanguageStorage";
 
 const AuthLayout: React.FC = () => {
-
+    const languageStorageInstance = new LanguageStorage();
+    alert(languageStorageInstance.get());
     return (
         <Layout>
             <h3>SAP</h3>
